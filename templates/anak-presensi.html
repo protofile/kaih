@@ -28,7 +28,7 @@
                         <a href="#" class="notification-btn top-btn relative">
                             <img src="../assets/images/home-icon.svg" alt="">
                         </a>
-                        <span class="text-white">Tantangan</span>
+                        <span class="text-white">Presensi</span>
                     </div>
                     
                     <div class="buttons-group flex items-center gap-2">
@@ -39,39 +39,36 @@
                     </div>
                 </div>
                 <div class="content p-4 pb-32 bg-white rounded-t-2xl">
-                    <h3 class="text-[#425DA7] mb-4 text-xl">Kuis A</h3>
                     <form action="">
-                        <div class="flex flex-col gap-2">
-                            <div class="card-tantangan flex flex-col gap-4">
-                                <p><span class="rounded-full p-2 text-xs bg-slate-200">1/10</span></p>
-                                <p class="text-center !text-lg">Siapakah nama Presiden Indonesia pertama?</p>
-                                <div class="inp-group mb-0">
-                                    <input type="radio" name="opt-1" id="opt-1" class="hidden-check">
-                                    <label for="opt-1" class="check-label">Ir. Soekarno</label>
+                        <div class="inp-group">
+                            <label for="" class="text-xs text-slate-600 mb-1 block">Pilih Tanggal</label>
+                            <input type="text" class="border border-slate-200">
+                        </div>
+                        <div class="inp-group">
+                            <label for="" class="text-xs text-slate-600 mb-1 block">Info Kheadiran</label>
+                            <div class="flex gap-2 refleksi-option">
+                                <div class="inp-group text-center">
+                                    <input type="radio" name="act-1" id="">
+                                    <img src="../assets/images/red-face.png" alt="">
+                                    <label for="act-1" class="text-center w-full text-xs">Tidak Hadir</label>
+                                    <span></span>
                                 </div>
-                                <div class="inp-group mb-0">
-                                    <input type="radio" name="opt-1" id="opt-1" class="hidden-check">
-                                    <label for="opt-1" class="check-label">Joko Widodo</label>
+                                <div class="inp-group text-center">
+                                    <input type="radio" name="act-1" id="">
+                                    <img src="../assets/images/green-face.png" alt="">
+                                    <label for="act-1" class="text-center w-full text-xs">Hadir</label>
+                                    <span></span>
                                 </div>
-                                <div class="inp-group mb-0">
-                                    <input type="radio" name="opt-1" id="opt-1" class="hidden-check">
-                                    <label for="opt-1" class="check-label">H.M. Soeharto</label>
-                                </div>
-                                <div class="inp-group mb-0">
-                                    <input type="radio" name="opt-1" id="opt-1" class="hidden-check">
-                                    <label for="opt-1" class="check-label">Megawati</label>
-                                </div>
-                            </div>
-                            <div class="pagination mt-4">
-                                <button class="btn btn-white shadow-lg"><img src="../assets/images/arrow-left.png" alt="" class="w-6 h-6 object-contain"> KEMBALI</button>
-                                <button class="btn btn-white shadow-lg">LANJUT <img src="../assets/images/arrow-right.png" alt="" class="w-6 h-6 object-contain"></button>
-                            </div>
-                            <div class="pagination mt-4 !justify-center">
-                                <button class="btn btn-purple shadow-lg">SELESAI <img src="../assets/images/check-icon-white.png" alt=""></button>
                             </div>
                         </div>
+                        <div class="inp-group">
+                            <label for="" class="text-xs text-slate-600 mb-1 block">Keterangan</label>
+                            <textarea type="text" class="border border-slate-200 w-full h-[150px]"></textarea>
+                        </div>
+                        <div class="inp-group">
+                            <button class="btn btn-purple shadow-lg mx-auto">SIMPAN <img src="../assets/images/check-icon-white.png" alt=""></button>
+                        </div>
                     </form>
-                    
                 </div>
 
                 <div class="foot-nav">
@@ -79,11 +76,11 @@
                         <img src="../assets/images/foot-icon-kaih.png" alt="">
                         <span>KAIH</span>
                     </a>
-                    <a href="#" class="active">
+                    <a href="#">
                         <img src="../assets/images/foot-icon-tantangan.png" alt="">
                         <span>Tantangan</span>
                     </a>
-                    <a href="#">
+                    <a href="#" class="active">
                         <img src="../assets/images/foot-icon-refleksi.png" alt="">
                         <span>Refleksi</span>
                     </a>
@@ -95,18 +92,19 @@
             </div>
         </div>
 
-        <div class="overlay">
-            <div class="popup success">
-                <div class="text text-center">
-                    <h3>Kamu hebat!</h3>
-                    <p>Kamu berhasil menyelesaikan kuis A. Mau lihat pencapaianmu?</p>
-                    <div class="pagination mt-4 !justify-center">
-                        <button class="btn btn-purple shadow-lg">LIHAT PENCAPAIANMU <img src="../assets/images/check-icon-white.png" alt=""></button>
-                    </div>
-                </div>
-                <div class="close-bt"><img src="../assets/images/close-bt.png" alt=""></div>
-            </div>
-        </div>
 
+        <script src="../assets/js/jquery-1.11.0.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $(".acc-item-head").click(function(tab){
+                tab.preventDefault();
+                $(".acc-item-body").hide();
+                $(this).next().slideDown();
+                //$(".acc-item").removeClass("active");
+                //$(this).parent().parent().addClass("active");
+              });
+            });
+        </script>
     </body>
 </html>

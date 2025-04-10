@@ -126,4 +126,62 @@
     .popup.success{
         @apply bg-[url(../images/success-popup.png)] bg-contain bg-no-repeat w-[328px] h-[423px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
     }
+    .popup{
+        @apply pt-[200px];
+    }
+    .popup .text{
+        @apply bg-white rounded-lg p-6;
+    }
+    .popup .text h3{
+        @apply text-2xl text-[#31416C];
+    }
+    .popup .text .btn{
+        @apply mt-4 -mb-11 w-auto;
+    }
+    .popup .close-bt{
+        @apply absolute top-0 right-0;
+    }
+    .acc-item{
+        @apply bg-white w-full rounded-lg border border-slate-200 p-4 flex flex-col gap-6;
+    }
+    .acc-item-head{
+        @apply flex justify-between items-center; 
+    }
+    .acc-item-body{
+        @apply hidden;
+    }
+    .acc-item.active .acc-item-body{
+        @apply block;
+    }
+    .refleksi-option{
+        @apply flex gap-4;
+    }
+    .refleksi-option .inp-group{
+        @apply border border-slate-200 flex flex-col gap-2 justify-center p-4 relative rounded-md;
+    }
+    .refleksi-option .inp-group img{
+        @apply w-full h-6 object-contain;
+    }
+    .refleksi-option .inp-group input{
+        @apply w-full h-full absolute top-0 left-0 opacity-0;
+    }
+    .refleksi-option .inp-group img,
+    .refleksi-option .inp-group label,
+    .refleksi-option .inp-group input{
+        @apply z-20;
+    }
+    .refleksi-option .inp-group img,
+    .refleksi-option .inp-group label{
+        @apply pointer-events-none;
+    }
+    .refleksi-option .inp-group span{
+        @apply absolute w-full h-full bg-[#425DA7] opacity-0 z-0 transition-all rounded-md top-0 left-0 pointer-events-none;
+    }
+    .refleksi-option .inp-group input:checked ~ span{
+        @apply !opacity-100;
+    }
+    .refleksi-option .inp-group input:checked ~ label{
+        @apply text-white;
+    }
+
 }
