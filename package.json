@@ -1,0 +1,15 @@
+{
+  "name": "kaih",
+  "version": "1.0.0",
+  "description": "HTML of Digimon KAIH",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./tailwind.css -o ./assets/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

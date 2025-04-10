@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+.fredoka-<uniquifier> {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+@layer base{
+    *{
+        font-family: "Nunito", sans-serif;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        font-family: "Fredoka", sans-serif;
+        font-weight: 700;
+    }
+    .master{
+        @apply w-full h-[100vh];
+    }
+    .login-page{
+        @apply bg-[url(../images/login-bg.jpg)] bg-center;
+    }
+    .mobile-wrapper{
+        @apply w-full h-[100vh] max-w-[480px] mx-auto;
+    }
+    .login-page h3{
+        @apply w-full;
+    }
+    .inp-group{
+        @apply w-full mb-4 relative;
+    }
+    input{
+        @apply px-6 py-3 rounded-xl text-lg w-full;
+    }
+    .btn{
+        @apply flex gap-2 items-center font-semibold py-2 pr-2 pl-4 rounded-full;
+        font-family: "Fredoka", sans-serif;
+    }
+    .btn.btn-white{
+        @apply bg-white text-[#5271C3];
+    }
+    .btn.btn-purple{
+        @apply text-white bg-[#5271C3];
+    }
+    .top-btn{
+        @apply border border-white min-w-10 h-10 flex justify-center items-center gap-2 px-2 rounded-full bg-[rgba(255,255,255,0.3)];
+    }
+    .bt{
+        @apply flex gap-2 h-9 px-4 justify-center items-center border rounded-md;
+    }
+    .bt.outline-bt{
+        @apply border-[#5271C3] text-[#5271C3] bg-white text-xs;
+    }
+    .notification-counter{
+        @apply absolute -top-1 -right-1 w-4 h-4 flex justify-center items-center text-[8px] bg-red-700 border border-white text-white rounded-full;
+    }
+    .menu-box{
+        @apply flex flex-col bg-[url(../images/bg-menu-thumbnail.jpg)] bg-repeat bg-cover rounded-lg w-full h-24 text-center p-2;
+    }
+    .menu-box img{
+        @apply h-[60px] w-full object-contain;
+    }
+    .content{
+        @apply min-h-full;
+    }
+    .content-card{
+        @apply bg-slate-100 rounded-lg p-4 flex gap-4 items-center;
+    }
+    .content-card img{
+        @apply w-32 h-20 rounded-md object-cover;
+    }
+    .foot-nav{
+        @apply fixed bottom-0 w-full max-w-[480px] left-1/2 -translate-x-1/2 flex;
+    }
+    .foot-nav a{
+        @apply p-4 w-full gap-2 text-center flex flex-col justify-center items-center bg-[#6488EA];
+    }
+    .foot-nav a.active{
+        @apply bg-[#5271C3];
+    }
+    .foot-nav a img{
+        @apply w-8 h-8 object-contain;
+    }
+    .foot-nav a span{
+        @apply text-white text-xs;
+    }
+    .card-tantangan{
+        @apply p-4 border border-slate-200 border-b-4 rounded-lg;
+    }
+    .card-tantangan p{
+        @apply text-sm text-slate-800;
+    }
+    .check-label{
+        @apply px-4 py-3 w-full border border-slate-200 flex justify-center items-center rounded-md transition-all;
+    }
+    input.hidden-check{
+        @apply absolute w-full h-full top-0 left-0 opacity-0;
+    }
+    input.hidden-check:checked + .check-label{
+        @apply bg-[#5271C3] text-white border-[#5271C3];
+    }
+    .pagination{
+        @apply flex items-center justify-between;
+    }
+    .overlay{
+        @apply w-[100vw] h-[100vh] bg-[rgba(82,113,195,0.75)] z-50 fixed top-0 left-0;
+    }
+    .popup.success{
+        @apply bg-[url(../images/success-popup.png)] bg-contain bg-no-repeat w-[328px] h-[423px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+}
