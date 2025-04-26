@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Digimon KAIH</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="master login-page">
+            <div class="mobile-wrapper">
+                
+                <div class="dashboard-header flex justify-between p-4">
+                    <div class="flex items-center gap-2">
+                        <a href="#" class="notification-btn top-btn relative">
+                            <img src="../assets/images/home-icon.svg" alt="">
+                        </a>
+                        <span class="text-white">Pencapaian</span>
+                    </div>
+                    
+                    <div class="buttons-group flex items-center gap-2">
+                        <a href="#" class="notification-btn top-btn relative">
+                            <img src="../assets/images/bell-icon.svg" alt="">
+                            <span class="notification-counter ">12</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="top-ct">
+                    <div class="flex items-center gap-4">
+                        <img src="../assets/images/pencapaian.png" alt="">
+                        <div class="text">
+                            <p class="text-lg text-white">Score kamu sebanyak</p>
+                            <div class="score">1.200</div>
+                            <p class="text-sm text-white">Lanjutkan kebiasaan baikmu dan dapatkan rewardnya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content p-4 pb-32 bg-white rounded-t-2xl h-[60vh] overflow-y-scroll">
+                    <ul class="roadmap">
+                        <li>
+                            <div class="bullet"></div>
+                            <div class="avatar">
+                                <img src="../assets/images/avatar/avatar-1.png" alt="">
+                                <span>Rizky</span>
+                            </div>
+                            <div class="text">
+                                <h5 class="score">1.500</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <button class="btn btn-purple shadow-lg mx-auto">AMBIL SERTIFIKAT</button>
+                            </div>
+                        </li>
+                        <li class="active">
+                            <div class="bullet"></div>
+                            <div class="avatar">
+                                <img src="../assets/images/avatar/avatar-1.png" alt="">
+                                <span>Rizky</span>
+                            </div>
+                            <div class="text">
+                                <h5 class="score">1.500</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <button class="btn btn-purple shadow-lg mx-auto">AMBIL SERTIFIKAT</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bullet"></div>
+                            <div class="avatar">
+                                <img src="../assets/images/avatar/avatar-1.png" alt="">
+                                <span>Rizky</span>
+                            </div>
+                            <div class="text">
+                                <h5 class="score">1.500</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <button class="btn btn-purple shadow-lg mx-auto">AMBIL SERTIFIKAT</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bullet"></div>
+                            <div class="avatar">
+                                <img src="../assets/images/avatar/avatar-1.png" alt="">
+                                <span>Rizky</span>
+                            </div>
+                            <div class="text">
+                                <h5 class="score">1.500</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <button class="btn btn-purple shadow-lg mx-auto">AMBIL SERTIFIKAT</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bullet"></div>
+                            <div class="avatar">
+                                <img src="../assets/images/avatar/avatar-1.png" alt="">
+                                <span>Rizky</span>
+                            </div>
+                            <div class="text">
+                                <h5 class="score">1.500</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                                <button class="btn btn-purple shadow-lg mx-auto">AMBIL SERTIFIKAT</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="foot-nav">
+                    <a href="#">
+                        <img src="../assets/images/foot-icon-kaih.png" alt="">
+                        <span>KAIH</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/foot-icon-tantangan.png" alt="">
+                        <span>Tantangan</span>
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/foot-icon-refleksi.png" alt="">
+                        <span>Refleksi</span>
+                    </a>
+                    <a href="#" class="active">
+                        <img src="../assets/images/foot-icon-pencapaian.png" alt="">
+                        <span>Pencapaian</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../assets/js/jquery-1.11.0.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $(".acc-item-head").click(function(tab){
+                tab.preventDefault();
+                $(".acc-item-body").hide();
+                $(this).next().slideDown();
+                //$(".acc-item").removeClass("active");
+                //$(this).parent().parent().addClass("active");
+              });
+            });
+        </script>
+    </body>
+</html>

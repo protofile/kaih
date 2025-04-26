@@ -92,7 +92,7 @@
         @apply w-32 h-20 rounded-md object-cover;
     }
     .foot-nav{
-        @apply fixed bottom-0 w-full max-w-[480px] left-1/2 -translate-x-1/2 flex;
+        @apply fixed bottom-0 w-full max-w-[480px] left-1/2 -translate-x-1/2 flex z-50;
     }
     .foot-nav a{
         @apply p-4 w-full gap-2 text-center flex flex-col justify-center items-center bg-[#6488EA];
@@ -207,5 +207,49 @@
     }
     .love-btn img.active{
         @apply opacity-100;
+    }
+    .roadmap{
+        @apply relative;
+    }
+    .roadmap::before{
+        content: "";
+        @apply bg-[#FBC675] w-4 h-full top-0 left-[42%] -translate-x-1/2 absolute z-0;
+    }
+    .roadmap li{
+        @apply relative z-10 flex w-full justify-between pb-8;
+    }
+    .roadmap li .bullet{
+        @apply w-10 h-10 rounded-full border border-white absolute top-0 left-[42%] -translate-x-1/2 bg-[#6488EA];
+    }
+    .roadmap li .avatar{
+        @apply flex h-11 items-center gap-2 p-1 bg-[#6488EA] max-w-[35%] rounded-l-full relative opacity-0;
+    }
+    .roadmap li.active .avatar{
+        @apply opacity-100;
+    }
+    .roadmap li .avatar img{
+        @apply w-9 h-9 rounded-full border border-white object-cover;
+    }
+    .roadmap li .avatar span{
+        @apply text-white;
+    }
+    .roadmap li .avatar::after{
+        content: "";
+        @apply w-11 h-11 bg-contain bg-[url(../images/tip.png)] absolute left-full top-0 bg-no-repeat;
+    }
+    .roadmap li .text{
+        @apply w-[48%];
+    }
+    .roadmap li .text .score{
+        @apply text-[#CF980D] text-2xl mb-2;
+    }
+    .roadmap li .text p{
+        @apply text-slate-700 mb-2;
+    }
+    .roadmap li .text button.btn{
+        @apply text-sm whitespace-nowrap opacity-50;
+    }
+    .top-ct .text .score{
+        @apply text-[48px] font-bold text-[#FFC107];
     }
 }
